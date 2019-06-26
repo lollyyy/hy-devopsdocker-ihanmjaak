@@ -77,7 +77,7 @@ Various different commands such as `docker run devopsdockeruh/overwrite_cmd_exer
 
 ## Exercise 1.7
 
-The Dockerfile for this exercise can be found [here](https://github.com/lollyyy/hy-devopsdocker-ihanmjaak/blob/master/part1/1.7/Dockerfile)
+The Dockerfile for this exercise can be found [here](https://github.com/lollyyy/hy-devopsdocker-ihanmjaak/blob/master/part1/1.7/Dockerfile). And the script file [here](https://github.com/lollyyy/hy-devopsdocker-ihanmjaak/blob/master/part1/1.7/script.sh)
 
 Used `docker build -t curler .` to build the Docker container from Dockerfile, after that `docker run -it curler` to run said container
 
