@@ -61,3 +61,34 @@ Attach to container with `docker attach curl-ubuntu`, the container now waits fo
 </body></html> 
 ```
 
+## Exercise 1.6
+
+The Dockerfile for this exercise can be found [here](https://github.com/lollyyy/hy-devopsdocker-ihanmjaak/blob/master/part1/1.6/Dockerfile)
+
+---
+
+The commands used for this exercise:
+
+Various different commands such as `docker run devopsdockeruh/overwrite_cmd_exercise` used in great confusion before a quick search from the course Telegram chat cleared out what do I need to do in this exercise
+
+`docker build -t docker-clock .` to build the container from the Dockerfile
+
+`docker run docker-clock` to run container
+
+## Exercise 1.7
+
+The Dockerfile for this exercise can be found [here](https://github.com/lollyyy/hy-devopsdocker-ihanmjaak/blob/master/part1/1.7/Dockerfile)
+
+Used `docker build -t curler .` to build the Docker container from Dockerfile, after that `docker run -it curler` to run said container
+
+Running the container prompts a website query and entering `helsinki.fi` returns the following:
+
+```html
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
+</body></html>
+``` 
