@@ -37,3 +37,27 @@ Go inside the container with `docker exec -it 697 bash`
 
 Follow the logs using `tail -f ./logs.txt`, logs reveal us the secret message: "Docker is easy"
 
+## Exercise 1.5 
+
+Command to start the container `docker run -d -it --name curl-ubuntu ubuntu:16.04 sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'`
+
+Entering the container with `docker exec -it d8a bash`
+
+### Installing CURL
+
+Installing CURL inside the container by first running `apt-get update` to update Ubuntu, then install CURL with `apt-get install curl` 
+
+### Retrieving a website with CURL
+
+Attach to container with `docker attach curl-ubuntu`, the container now waits for input. Entering `helsinki.fi` returns the following:
+
+```html
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
+</body></html> 
+```
+
