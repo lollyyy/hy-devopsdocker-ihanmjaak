@@ -92,3 +92,11 @@ Running the container prompts a website query and entering `helsinki.fi` returns
 <p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
 </body></html>
 ``` 
+
+## Exercise 1.9
+
+Command used for this exercise: 
+`docker run -d -p 3000:80 devopsdockeruh/ports_exercise`
+
+
+
